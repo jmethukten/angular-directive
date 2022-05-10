@@ -1,0 +1,15 @@
+<div>
+    <div class="center">
+        <h1 [ngClass]="titleColor">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, minus!</h1>
+    </div>
+    <div class="row">
+        <div [ngClass]="{'card': true, 'card-active': article.color === active}" *ngFor="let article of articles">
+            <h2>{{article.title}}</h2>
+            <p>{{article.content}}</p>
+            <div>
+                <button [ngStyle]="{'background-color': article.color}" (click)="handleClick(article.color)"> Set
+                    {{article.color}}</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+.center {
+  text-align: center;
+}
+
+h1,
+h2,
+p {
+  font-family: "Dancing Script", cursive;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.card {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  margin: 3rem 3rem 0 3rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+}
+
+.card-active {
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 1px 5px 3px black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+  }
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+}
+
+.blue {
+  color: blue;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
